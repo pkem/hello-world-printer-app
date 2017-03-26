@@ -14,4 +14,13 @@ run:
 	PATHONPATH=. py.main
 
 docker_build:
-	docker build -t hello-world-printer.
+	docker build -t hello-world-printer .
+
+USERNAME=pawkem
+TAG=$(pawkem) /hello-world-printer
+docker_push:
+	docker login --username $ (pawkem) --password $ (pawelek86)  ; \
+	docker tag hello-world-printer $ (TAG); \
+	docker push $ (TAG); \
+	docker logout;
+
