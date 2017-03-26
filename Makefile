@@ -17,10 +17,10 @@ docker_build:
 	docker build -t hello-world-printer .
 
 USERNAME=pawkem
-TAG=$(pawkem) /hello-world-printer
+TAG=$ (USERNAME)/hello-world-printer
 docker_push:
-	docker login --username $ (pawkem) --password $ (pawelek86)  ; \
+	docker login --username $ (USERNAME) --password $ (PASSWORD)  ; \
 	docker tag hello-world-printer $ (TAG); \
-	docker push $ (TAG); \
+	docker push $(TAG); \
 	docker logout;
 
