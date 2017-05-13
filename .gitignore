@@ -1,3 +1,5 @@
 **/*.pyc
 .cache
 heroku.tar.gz
+test_results.xml
+.coverage

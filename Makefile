@@ -15,6 +15,10 @@ run:
 
 docker_build:
 	docker build -t hello-world-printer .
+test_cov:
+	PYTHONPATH=. py.test  --verbose -s --cov=.
+test_xunit:
+	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
 
 USERNAME=pawkem
 TAG=$(USERNAME)/hello-world-printer
