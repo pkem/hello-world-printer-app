@@ -87,3 +87,31 @@ Materiały
 DODANE
 ============
 Dodany monitoring do aplikacji na Statuscake.com
+
+Instalacja wirtualnego środowiska Python
+============
+- Logowanie na root'a (su)
+- pip install -U pip
+- yum makecache fast
+- yum install python-pip
+- pip install virtualenv
+- usuwanie wirtualnego środowiska: rm - rf /home/tester/.virtualenvs/wsb-simple-flask-app
+-JAKO użytkownik:
+source /usr/bin/virtualenvwrapper.sh
+mkvirtualenv wsb-simple-flask-app
+cd hello-world-printer-app
+make deps
+make run
+
+
+
+- pip install virtualenvwrapper
+- yum install python-virtualenv
+- uruchomienie wirtualnego środowiska
+
+Tworzenie nowego brancha GIT
+==============
+- git init
+- git branch testyselenium
+- git checkout testyselenium
+

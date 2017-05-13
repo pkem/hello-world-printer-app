@@ -11,7 +11,7 @@ test:
 	PYTHONPATH=. py.test  --verbose -s
 
 run:
-	PATHONPATH=. py.main
+	python main.py
 
 docker_build:
 	docker build -t hello-world-printer .
