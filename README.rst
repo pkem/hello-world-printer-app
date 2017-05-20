@@ -103,6 +103,17 @@ cd hello-world-printer-app
 make deps
 make run
 
+Dopisanie zmiennych wirtualnego środowiska w Bashu
+==============
+- do basha dodać uruchomienie wirtualki
+atom ~/.bashrc
+- w Atomie
+source /usr/bin/virtualenvwrapper.sh
+echo "Witaj"
+- w Terminalu:
+bash
+- Następnie uruchomienie wirtualnego środowiska w Terminalu
+mkvirtualenv wsb-simple-flask-app
 
 
 - pip install virtualenvwrapper
